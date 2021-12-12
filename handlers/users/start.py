@@ -31,7 +31,7 @@ async def checker(call: types.CallbackQuery):
                                           channel=channel)
         channel = await bot.get_chat(channel)
         if status:
-            result += f"<b>{channel.title}</b> kanaliga obuna bo'lgansiz!\n\n /mushuklar komandasini yuboring \nyoki /help tugmasini bosing"
+            result += f"<b>{channel.title}</b> kanaliga obuna bo'lgansiz!\n\n /mushuk komandasini yuboring \nyoki /help tugmasini bosing"
         else:
             invite_link = await channel.export_invite_link()
             result += (f"<b>{channel.title}</b> kanaliga obuna bo'lmagansiz. "
